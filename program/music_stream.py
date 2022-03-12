@@ -47,7 +47,7 @@ from youtubesearchpython import VideosSearch
 
 def ytsearch(query: str):
     try:
-        search = VideosSearch(query, limit=).result(4)
+        search = VideosSearch(query, limit=4).result()
         data = search["result"][4]
         songname = data["title"]
         url = data["link"]
