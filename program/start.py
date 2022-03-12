@@ -87,6 +87,7 @@ async def start_(c: Client, message: Message):
         return
     await message.reply_text(
         f"""✨ **Welcome {message.from_user.mention()} !**\n
+    await message.reply_photo(
         photo= f"https://telegra.ph/file/cd1159a218a628cc6dee8.jpg" ,
 💭 [{me_bot.first_name}](https://t.me/{BOT_USERNAME}) **Is an Advanced Telegram Video Chat bot to play music and video in groups through the Telegram Group video chat!**
 
