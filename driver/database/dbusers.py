@@ -1,6 +1,7 @@
 from typing import Dict, List, Union
 from driver.database.dblocal import db
 
+
 usersdb = db.users
 
 
@@ -24,5 +25,6 @@ async def get_served_users() -> list:
 async def add_served_user(user_id: int):
     is_served = await is_served_user(user_id)
     if is_served:
-        return
-    return await usersdb.insert_one({"user_id": user_id})
+        pass
+    else:
+        return await usersdb.insert_one({"user_id": user_id})
